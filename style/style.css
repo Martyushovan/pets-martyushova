@@ -163,8 +163,6 @@ h1 {
 .sec {
   display: inline-flex;
   padding-left: 36px;
-  margin-bottom: 99px;
-
 }
 
 .sec1 {
@@ -213,7 +211,11 @@ h1 {
 }
 
 .container {
-  margin-bottom: 99px;
   margin-top: 74px;
+}
+
+.container1 .inner {
+  line-height: 30px;
+  margin-top: 151px;
 }
 
