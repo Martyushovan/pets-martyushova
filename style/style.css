@@ -260,33 +260,43 @@ h1 {
   vertical-align: middle;
 }
 
-.container1 .inner {
+.reviews {
+ width: 1024px; 
+ margin: 0 auto;
+}
+
+.reviews__title {
+  display: flex;
+  font-size: 36px;
+  font-family: 'Fira Sans', serif;
+  margin: 0 auto;
+  justify-content: center;
   line-height: 30px;
   margin-top: 151px;
 }
 
-.reviews {
+.reviews__row {
+  margin-top: 80px;
+}
+
+.reviews__row-content {
   display: inline-flex;
   justify-content: space-around;
 }
 
-.link {
+.reviews__row-quote {
   display: flex;
   flex-direction: column;
 }
 
-.reviews-col1 {
-  flex-direction: column;
-}
-
-.name {
+.reviews__row-name {
   font-size: 24px;
   font-family: 'Fira Sans', serif;
   line-height: 30px;
   font-style: normal;
 }
 
-.time {
+.reviews__row-time {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 30px;
@@ -294,14 +304,97 @@ h1 {
   color: #737274;
 }
 
-.reviews-text {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+.reviews__row-text {
   line-height: 30px;
   color: #202020;
   font-weight: normal;
 }
 
-.container-item {
-  margin-top: 80px;
+.reviews__column {
+  flex-direction: column;
+}
+
+.reviews__image {
+  overflow: hidden;
+  border-radius: 9px;
+  width: 460px;
+  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
+  font-size: 0;
+  margin-right: 24px;
+  margin-bottom: 38px;
+}
+ 
+.about__image img {
+  object-fit: cover;
+}
+
+.reviews__video {
+  text-decoration: none;
+  font-size: 16px;
+  color: #737274;
+  padding-top: 38px;
+}
+
+.reviews__video-link {
+  color: #6b34b6;
+}
+
+.blog {
+ display: flex;
+ flex-direction: row;
+ width: 1024px; 
+ margin: 0 auto;
+ margin-top: 210px;
+ background-image: url(../images/backgroun_2.jpg);
+ background-repeat: repeat;
+}
+
+.blog__column {
+  flex-direction: column;
+  padding-top: 110px;
+}
+
+.blog__title {
+  font-size: 36px;
+  font-family: 'Fira Sans',serif;
+  line-height: 20px;
+  letter-spacing: 50;
+  color: #fff;
+  padding-left: 45px;
+
+}
+
+.blog__title-suptitle {
+  font-size: 16px;
+  line-height: 30px;
+  color: #a38dc3;
+  padding-left: 45px;
+}
+
+.blog__article {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.blog__article-column {
+  flex-direction: column;
+  padding-right: 20px;
+}
+
+.blog__article-column1 {
+  flex-direction: column;
+  padding-right: 41px;
+}
+
+.blog__article-image {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.4);
+ /* position: absolute;*/
+  
+}
+
+.blog__article-text {
+  background-color: #fff;
 }

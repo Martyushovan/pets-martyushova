@@ -22,7 +22,8 @@
 					<a class="nav-link" href="#">Блог</a>
 					<a class="nav-link" href="#">Контакты</a>
 				</nav>
-			</div>	<a class="tel" href="tel:+79252569877">+7(925) 256 98 77</a>
+			</div>	
+			<a class="tel" href="tel:+79252569877">+7(925) 256 98 77</a>
 		</header>
 		<main>
 			<section>
@@ -107,24 +108,36 @@
 					</article>
 				</div>
 			</section>
-			<section class="container1">
-				<h2 class="inner">Отзывы хозяев</h2>
-				<div class="container-item">
-					<div class="reviews">
-						<blockquote class="link">	<cite class="name">Татьяна Зверева</cite>
-							<time class="time" datetime="">27.02.2018</time>
-							<p class="reviews-text">Хочу выразить большую благодарность Вам за это чудо - малыша, который появился у нас в семье. Деликаный, милый, ласковый и нежный белоснежный Уник, в которого я влюбилась с первого взгляда, увидев его фотографию на сайте Вашего питомника. Очень умный малыш!</p>
+
+			<section class="reviews">
+				<h2 class="reviews__title">Отзывы хозяев</h2>
+				<div class="reviews__row">
+
+					<div class="reviews__row-content">
+						<blockquote class="reviews__row-quote">	<cite class="reviews__row-name">Татьяна Зверева</cite>
+							<time class="reviews__row-time" datetime="">27.02.2018</time>
+							<p class="reviews__row-text">Хочу выразить большую благодарность Вам за это чудо - малыша, который появился у нас в семье. Деликаный, милый, ласковый и нежный белоснежный Уник, в которого я влюбилась с первого взгляда, увидев его фотографию на сайте Вашего питомника. Очень умный малыш!</p>
 						</blockquote>
-						<div class="reviews-col">
-							<img src="images/dog_on_the_beach.png" alt="собака с девушкой"> <a href="#"><em>Больше отзывов можно найти у нас <strong>группе ВК</strong></em></a>
+
+						<div class="reviews__column">
+							<div class="reviews__image">
+								<img src="images/dog_on_the_beach.jpg" alt="собака с девушкой">
+							</div> 
+							
+							<a class="reviews__video" href="#"><em>Больше отзывов можно найти у нас <strong class="reviews__video-link">группе ВК</strong></em></a>
+							
 						</div>
 					</div>
+
 				</div>
 			</section>
-			<section>
-				<h2>Все о животных</h2>
-				<p>Мы ведем активный блог про наших животных в социальных сетях - присоединяйтесь к нам. Полезные материалы про обучение, дрессировку, питание.</p>
-				<a href="#">
+
+			<section class="blog">
+				<div class="blog__column">
+					<h2 class="blog__title">Все о животных</h2>
+				  <p class="blog__title-suptitle">Мы ведем активный блог про наших животных в социальных сетях - присоединяйтесь к нам. Полезные материалы про обучение, дрессировку, питание.</p>
+				</div>
+				<!-- <a href="#">
 					<img src="images/social-icon-vk.svg" alt="вконтакте">
 				</a>
 				<a href="#">
@@ -132,17 +145,27 @@
 				</a>
 				<a href="#">
 					<img src="images/social-icon-instagram.svg" alt="instagram">
-				</a>
-				<article>
-					<img src="images/dog_black_white.png" alt="черно-белая собака">
-					<h3>Правильный рацион для взрослого пса</h3>
-					<a href="#">Читать статью</a>
+				</a> -->
+				<article class="blog__article">
+					<div class="blog__article-column">
+						<div class="blog__article-image">
+						  <img src="images/dog_black_white.jpg" alt="черно-белая собака">
+					  </div>
+					  <p class="blog__article-text">Правильный рацион для взрослого пса</p>
+					  <a href="#">Читать статью</a>
+					</div>
 				</article>
-				<article>
-					<img src="images/sleeping_dog.png" alt="грустная овчарка">
-					<h3>Бывает ли собачья депрессия?</h3>
-					<a href="#">Читать статью</a>
+
+				<article class="blog__article">
+					<div class="blog__article-column1">
+						<div class="blog__article-image">
+						  <img src="images/sleeping_dog.jpg" alt="грустная овчарка">
+					  </div>
+					  <p class="blog__article-text">Бывает ли собачья депрессия?</p>
+					  <a href="#">Читать статью</a>
+					</div>
 				</article>
+
 			</section>
 			<div>
 				<h2>Контакты</h2>
