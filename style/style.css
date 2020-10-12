@@ -98,8 +98,7 @@ h1 {
 
 .promo__title {
   width: 520px;
-  margin-left: 440px;
-  margin-right: 230px;
+  margin-left: 410px;
 }
 
 .promo__subtitle {
@@ -400,7 +399,7 @@ h1 {
   padding-right: 41px;
 }
 
-.blog__article-image {
+/*.blog__article-image {
   display: block;
   overflow: hidden;
   border-radius: 10px 10px 0 0;
@@ -413,6 +412,39 @@ h1 {
   background-color: #fff;
   border-top: none;
   padding-top: 15px;
+}*/
+
+.blog__article-block {
+  display: block;
+  width: 220px;
+  overflow-x: hidden;
+  border-radius: 10px 10px 10px 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  
+}
+
+.blog__article-image {
+  margin-bottom: 32px;
+}
+
+.blog__article-text {
+  font-size: 16px;
+  color: #202020;
+  line-height: 30px;
+  margin: 0 0 30px 11px;
+}
+
+.blog__article-link {
+  display: block;
+  font-size: 14px;
+  font-family: 'Fira Sans' serif;
+  line-height: 30px;
+  padding-left: 11px;
+  color: #510fad;
+  margin-bottom: 23px;
+
 }
 
 .contact {
@@ -450,7 +482,7 @@ h1 {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #202020;
-  font-weight: bold;
+  /*font-weight: bold;*/
   margin-bottom: 39px;
 }
 
@@ -459,7 +491,7 @@ h1 {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #202020;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .contact__item-email {
@@ -467,7 +499,7 @@ h1 {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #202020;
-  font-weight: bold;
+  /*font-weight: bold;*/
   margin-bottom: 39px;
 }
 
@@ -476,14 +508,14 @@ h1 {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #202020;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .contact__column1-mode {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   color: #202020;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 
 .footer__nav {
