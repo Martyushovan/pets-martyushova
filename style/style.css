@@ -69,21 +69,20 @@ h1 {
 .wrapper {
   background-image: url("../images/dachshund_logo.png");
   background-repeat: no-repeat;
-  width: 1160px;
+  width: 1024px;
   margin: 0 auto;
 }
 
 .logo {
   width: 100px;
   display: inline-block;
-  margin-right: 340px;
+  margin-right: auto;
 }
 
 .header {
   display: flex;
   align-items: center;
   padding: 10px 0;
-  margin: auto;
 }
 
 .tel {
@@ -94,12 +93,16 @@ h1 {
 }
 
 .promo {
+  margin-bottom: 200px;
+}
+
+.promo__title {
   width: 520px;
   margin-left: 440px;
   margin-right: 230px;
 }
 
-.promo1 {
+.promo__subtitle {
   border-left: 2px solid #510fad;
   padding-left: 10px;
   font-size: 14px;
@@ -109,12 +112,15 @@ h1 {
 
 
 .about {
-   width: 1024px;
-   margin: 0 auto;
-  /*background-image: url("../images/backround_1.png");*/
-  background-repeat: no-repeat;
-  margin-top: 196px;
+  margin: 0 auto;
   background-color: #4e0fa8;
+  margin-bottom: 153px;  
+}
+
+.about__decor-top {
+  background-color: #ede9e0; 
+  border: none;
+  margin-bottom: 116px;
 }
 
 .about__row {
@@ -122,16 +128,18 @@ h1 {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  margin-bottom: 111px;
 }
 
 .about__header {
   display: flex;
   flex-direction: column;
   width: 354px;
-  margin: 0 230px 0 440px;
-  padding-top: 180px;
+  margin-left: 365px;
   font-family: 'Fira Sans';
   color: #ffffff;
+  margin-bottom: 86px;
+
   
 }
 
@@ -139,12 +147,15 @@ h1 {
   display: inline-flex;
   box-sizing: border-box;
   justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .about__subtitle {
   font-size: 16px;
   font-family: 'Roboto', sans-serif;
   line-height: 30px;
+  margin-top: 0;
 }
 
 .about__image {
@@ -158,6 +169,10 @@ h1 {
 
 .about__image img {
   object-fit: cover;
+}
+
+.about__decor-bottom {
+  background-color: #ede9e0;
 }
 
 .about__features {
@@ -190,7 +205,7 @@ h1 {
 }
 
 .breed {
-  margin-top: 74px;
+  margin-bottom: 152px;
 }
 
 .breed__title {
@@ -200,13 +215,13 @@ h1 {
   color: #202020;
   text-align: center;
   letter-spacing: 50;
-  margin-top: 153px;
 }
 
 .breed__row {
   display: flex;
   width: 944px;
   margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .breed__row-name {
@@ -261,8 +276,8 @@ h1 {
 }
 
 .reviews {
- width: 1024px; 
  margin: 0 auto;
+ margin-bottom: 210px;
 }
 
 .reviews__title {
@@ -272,11 +287,11 @@ h1 {
   margin: 0 auto;
   justify-content: center;
   line-height: 30px;
-  margin-top: 151px;
+  margin-bottom: 80px;
 }
 
 .reviews__row {
-  margin-top: 80px;
+  
 }
 
 .reviews__row-content {
@@ -342,11 +357,10 @@ h1 {
 .blog {
  display: flex;
  flex-direction: row;
- width: 1024px; 
  margin: 0 auto;
- margin-top: 210px;
  background-image: url(../images/backgroun_2.jpg);
  background-repeat: repeat;
+ margin-bottom: 150px;
 }
 
 .blog__column {
@@ -387,14 +401,101 @@ h1 {
 }
 
 .blog__article-image {
+  display: block;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.4);
- /* position: absolute;*/
-  
 }
 
 .blog__article-text {
+  margin: 0;
   background-color: #fff;
+  border-top: none;
+  padding-top: 15px;
 }
+
+.contact {
+ margin: 0 auto;
+ padding-left: 45px;
+ margin-bottom: 122px;
+}
+
+.contact__title {
+  font-size: 36px;
+  font-family: 'Fira Sans',serif;
+  line-height: 30px;
+  margin-bottom: 49px;
+}
+
+.contact__row {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.contact__column {
+  margin-right: 210px;
+}
+
+.contact__item {
+  font-size: 14px;
+  font-family: 'Fira Sans',serif;
+  line-height: 30px;
+  color: #737274;
+  margin-bottom: 22px;
+}
+
+.contact__item-address {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  font-weight: bold;
+  margin-bottom: 39px;
+}
+
+.contact__item-time {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  font-weight: bold;
+}
+
+.contact__item-email {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  font-weight: bold;
+  margin-bottom: 39px;
+}
+
+.contact__item-tel {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  font-weight: bold;
+}
+
+.contact__column1-mode {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #202020;
+  font-weight: bold;
+}
+
+.footer__nav {
+  border-top: 2px solid #d5d1ca;
+}
+
+.footer__nav-link {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;
+  color: #737274;
+  text-decoration: none;
+  margin-right: 29px;
+}
+
