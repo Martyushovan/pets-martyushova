@@ -112,14 +112,9 @@ h1 {
 
 .about {
   margin: 0 auto;
-  background-color: #4e0fa8;
-  margin-bottom: 153px;  
-}
+  background-color: #510fad ;
+  margin-bottom: 153px;
 
-.about__decor-top {
-  background-color: #ede9e0; 
-  border: none;
-  margin-bottom: 116px;
 }
 
 .about__row {
@@ -138,8 +133,22 @@ h1 {
   font-family: 'Fira Sans';
   color: #ffffff;
   margin-bottom: 86px;
+}
 
-  
+.about::before {
+  content: url(../images/about_decoration_top.png);
+  display: block;
+  border: none;
+  margin-bottom: 116px;
+  background-color: #ede9e0;
+ 
+}
+
+.about::after {
+  content: url(../images/about_decoration_bottom.png);
+  display: block;
+  border: none;
+  background-color: #ede9e0;
 }
 
 .about__title {
@@ -168,10 +177,6 @@ h1 {
 
 .about__image img {
   object-fit: cover;
-}
-
-.about__decor-bottom {
-  background-color: #ede9e0;
 }
 
 .about__features {
