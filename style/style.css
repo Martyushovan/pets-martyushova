@@ -60,11 +60,14 @@ h1 {
 }
 
 .nav-link {
-  font-family: 'Roboto';
   text-decoration: none;
   color: black;
   margin-right: 25px;
 }
+
+nav a:hover {
+  color: #5d1fb2;
+} 
 
 .wrapper {
   background-image: url("../images/dachshund_logo.png");
@@ -88,8 +91,6 @@ h1 {
 .tel {
   text-decoration: none;
   color: #510fad;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .promo {
@@ -102,27 +103,36 @@ h1 {
 }
 
 .promo__subtitle {
+  color: #727173;
   border-left: 2px solid #510fad;
   padding-left: 10px;
   font-size: 14px;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
 }
 
 
 .about {
+  position: relative;
   margin: 0 auto;
-  background-color: #510fad ;
-  margin-bottom: 153px;
-
+  background-color: #510fad;
+  margin-bottom: 244px;
 }
+
+.about:before {
+  position: absolute;
+  content: url(../images/about_decoration_top.png);
+  display: block;
+  margin-top: -84px;
+}
+
 
 .about__row {
   width: 944px;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  margin-bottom: 111px;
+  /*margin-bottom: 111px;*/
+  padding-bottom: 106px;
 }
 
 .about__header {
@@ -133,22 +143,13 @@ h1 {
   font-family: 'Fira Sans';
   color: #ffffff;
   margin-bottom: 86px;
+  padding-top: 116px;
 }
 
-.about::before {
-  content: url(../images/about_decoration_top.png);
-  display: block;
-  border: none;
-  margin-bottom: 116px;
-  background-color: #ede9e0;
- 
-}
-
-.about::after {
+.about:after {
+  position: absolute;
   content: url(../images/about_decoration_bottom.png);
   display: block;
-  border: none;
-  background-color: #ede9e0;
 }
 
 .about__title {
@@ -160,8 +161,7 @@ h1 {
 }
 
 .about__subtitle {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
+  color: #b8adc8;
   line-height: 30px;
   margin-top: 0;
 }
@@ -206,6 +206,10 @@ h1 {
   color: #ffec00;
   text-decoration: none;
   padding-left: 5px;
+}
+
+.about__video-link:hover {
+  color: #b8adc8;
 }
 
 .breed {
@@ -274,6 +278,10 @@ h1 {
   flex-wrap: 500;
 }
 
+.view:hover {
+  color: #868587;
+}
+
 .decor {
   padding-left: 14px;
   color: #510fad;
@@ -281,8 +289,16 @@ h1 {
 }
 
 .reviews {
+ position: relative;
  margin: 0 auto;
  margin-bottom: 210px;
+}
+
+.reviews:before {
+  position: absolute;
+  content: url(../images/“.png);
+  padding-left: 48px;
+  padding-top: 50px;
 }
 
 .reviews__title {
@@ -389,6 +405,24 @@ h1 {
   color: #a38dc3;
   padding-left: 45px;
 }
+
+.blog__icon {
+  background: url(../css_sprites.png); no-repeat;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-left: 45px; 
+}
+
+.vk { background-position: -102px -10px;  }
+.vk:hover { background-position: -64px -64px; }
+
+.facebook       { background-position: -10px -10px;  }
+.facebook:hover { background-position: -64px -128px ; }
+
+.instagram       { background-position: -56px -10px;  }
+.instagram:hover { background-position: -64px -192px ; }
+
 
 .blog__article {
   padding-top: 110px;
