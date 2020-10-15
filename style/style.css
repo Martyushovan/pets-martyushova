@@ -131,7 +131,6 @@ nav a:hover {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  /*margin-bottom: 111px;*/
   padding-bottom: 106px;
 }
 
@@ -183,11 +182,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-self: center;
-  font-size: 16px;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
   padding-top: 0px;
-  justify-content: space-around;
 }
 
 .about__features-list {
@@ -211,6 +206,19 @@ nav a:hover {
 .about__video-link:hover {
   color: #b8adc8;
 }
+
+.about__icon {
+  background: url(../css_sprites.png); no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 14px;
+  margin-left: 18px;
+}
+
+.arrow-y { background-position: -10px -148px;}
+.arrow-y:hover { background-position: -130px -148px; }
+
 
 .breed {
   margin-bottom: 152px;
@@ -261,8 +269,6 @@ nav a:hover {
 }
 
 .breed__row-text {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
   line-height: 30px;
   color: #8b8a8a;
   font-weight: normal;
@@ -281,6 +287,18 @@ nav a:hover {
 .view:hover {
   color: #868587;
 }
+
+.viev__icon {
+  background: url(../css_sprites.png); no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 14px;
+  margin-left: 14px;
+}
+
+.arrow-v {background-position: -50px -148px;}
+.arrow-v:hover {background-position: -90px -148px;}
 
 .decor {
   padding-left: 14px;
@@ -311,10 +329,6 @@ nav a:hover {
   margin-bottom: 80px;
 }
 
-.reviews__row {
-  
-}
-
 .reviews__row-content {
   display: inline-flex;
   justify-content: space-around;
@@ -333,8 +347,6 @@ nav a:hover {
 }
 
 .reviews__row-time {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
   line-height: 30px;
   font-style: italic;
   color: #737274;
@@ -411,17 +423,19 @@ nav a:hover {
   width: 26px;
   height: 26px;
   display: inline-block;
-  margin-left: 45px; 
+  margin-right: 9px; 
 }
 
-.vk { background-position: -102px -10px;  }
-.vk:hover { background-position: -64px -64px; }
+.vk { 
+  background-position: -102px -102px;
+  margin-left: 45px;  }
+.vk:hover { background-position: -148px -102px; }
 
 .facebook       { background-position: -10px -10px;  }
-.facebook:hover { background-position: -64px -128px ; }
+.facebook:hover { background-position: -56px -56px; }
 
-.instagram       { background-position: -56px -10px;  }
-.instagram:hover { background-position: -64px -192px ; }
+.instagram       { background-position: -102px -10px;  }
+.instagram:hover { background-position: -56px -102px; }
 
 
 .blog__article {
@@ -455,7 +469,6 @@ nav a:hover {
 }
 
 .blog__article-text {
-  font-size: 16px;
   color: #202020;
   line-height: 30px;
   margin: 0 0 30px 11px;
@@ -469,7 +482,11 @@ nav a:hover {
   padding-left: 11px;
   color: #510fad;
   margin-bottom: 23px;
+}
 
+.blog__article-link-arrow {
+  padding-left: 13px;
+  vertical-align: middle;
 }
 
 .contact {
@@ -503,56 +520,46 @@ nav a:hover {
   margin-bottom: 22px;
 }
 
-.contact__item-address {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: #202020;
-  /*font-weight: bold;*/
-  margin-bottom: 39px;
-}
-
-.contact__item-time {
-  text-decoration: none;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: #202020;
-  /*font-weight: bold;*/
-}
-
-.contact__item-email {
-  text-decoration: none;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: #202020;
-  /*font-weight: bold;*/
-  margin-bottom: 39px;
-}
-
 .contact__item-tel {
   text-decoration: none;
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
   color: #202020;
-  /*font-weight: bold;*/
 }
 
-.contact__column1-mode {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
-  color: #202020;
-  /*font-weight: bold;*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 2px solid #d5d1ca;
+  padding-top: 33px;
+  padding-left: 45px;
+ 
 }
 
 .footer__nav {
-  border-top: 2px solid #d5d1ca;
+ margin-right: auto;
 }
 
 .footer__nav-link {
-  font-size: 16px;
-  font-family: 'Roboto', sans-serif;
   line-height: 30px;
   color: #737274;
   text-decoration: none;
   margin-right: 29px;
+  margin-top: 33px;
 }
+
+.footer__icon {
+  background: url(../css_sprites.png); no-repeat;
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  padding-top: 23px;
+}
+
+.vk-f { background-position: -148px -10px; }
+.vk-f:hover { background-position: -148px -56px; }
+
+.facebook-f { background-position: -56px -10px;  }
+.facebook-f:hover { background-position: -10px -56px; }
+
+.instagram-f { background-position: -102px -56px;  }
+.instagram-f:hover { background-position: -10px -102px; }
 
