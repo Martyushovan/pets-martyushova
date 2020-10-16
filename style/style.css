@@ -1,31 +1,31 @@
 @font-face {
-    font-family: 'Fira Sans';
-    src: url('../fonts/Fira_Sans/subset-FiraSans-Medium.woff2') format('woff2'),
-        url('../fonts/Fira_Sans/subset-FiraSans-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Fira Sans';
+  src: url('../fonts/Fira_Sans/subset-FiraSans-Medium.woff2') format('woff2'),
+  url('../fonts/Fira_Sans/subset-FiraSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/subset-Roboto-Medium.woff2') format('woff2'),
-        url('../fonts/Roboto/subset-Roboto-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/subset-Roboto-Medium.woff2') format('woff2'),
+  url('../fonts/Roboto/subset-Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto/subset-Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto/subset-Roboto-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto/subset-Roboto-Regular.woff2') format('woff2'),
+  url('../fonts/Roboto/subset-Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-
+/*не более одной пустой строки между кодом*/
 
 body {
   background-color: #ede9e0;
@@ -67,7 +67,7 @@ h1 {
 
 nav a:hover {
   color: #5d1fb2;
-} 
+}
 
 .wrapper {
   background-image: url("../images/dachshund_logo.png");
@@ -113,7 +113,7 @@ nav a:hover {
 
 .about {
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto; /*марджины и паддинги не дублируем*/
   background-color: #510fad;
   margin-bottom: 244px;
 }
@@ -139,7 +139,7 @@ nav a:hover {
   flex-direction: column;
   width: 354px;
   margin-left: 365px;
-  font-family: 'Fira Sans';
+  font-family: 'Fira Sans'; /*свойство ожидает два параметра, например указание засечек*/
   color: #ffffff;
   margin-bottom: 86px;
   padding-top: 116px;
@@ -169,7 +169,7 @@ nav a:hover {
   overflow: hidden;
   border-radius: 9px;
   width: 460px;
-  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5); /*значение 0 пишем без указания единиц*/
   font-size: 0;
   margin-right: 24px;
 }
@@ -182,7 +182,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding-top: 0px;
+  padding-top: 0px; /*значение 0 пишем без указания единиц*/
 }
 
 .about__features-list {
@@ -196,7 +196,7 @@ nav a:hover {
 }
 
 .about__video-link {
-  font-family: 'Fira Sans' serif;
+  font-family: 'Fira Sans' serif; /*тут передаем значения через запятую*/
   font-size: 16px;
   color: #ffec00;
   text-decoration: none;
@@ -208,7 +208,7 @@ nav a:hover {
 }
 
 .about__icon {
-  background: url(../css_sprites.png); no-repeat;
+  background: url(../css_sprites.png); no-repeat; /*тут передаем значения через запятую*/
   display: inline-block;
   vertical-align: middle;
   width: 20px;
@@ -230,13 +230,13 @@ nav a:hover {
   line-height: 20px;
   color: #202020;
   text-align: center;
-  letter-spacing: 50;
+  letter-spacing: 50; /*необходимо указать имя величины px, em, rem, %  или иную*/
 }
 
 .breed__row {
   display: flex;
   width: 944px;
-  margin: 0 auto;
+  margin: 0 auto; /*не дублируем паддинги и марджины*/
   margin-bottom: 72px;
 }
 
@@ -244,12 +244,12 @@ nav a:hover {
   font-size: 24px;
   font-family: 'Fira Sans', serif;
   line-height: 20px;
-  letter-spacing: 50;
+  letter-spacing: 50; /*необходимо указать имя величины px, em, rem, %  или иную*/
 }
 
 .breed__row-page {
   display: inline-flex;
-  align-items: top;
+  align-items: top; /*у данного свойства нет такого значения, инфа тут: webref.ru */
 }
 
 .breed__image {
@@ -281,7 +281,7 @@ nav a:hover {
   color: #510fad;
   text-decoration: none;
   line-height: 30px;
-  flex-wrap: 500;
+  flex-wrap: 500; /*у данного свойства нет такого значения, инфа тут: webref.ru */
 }
 
 .view:hover {
@@ -307,9 +307,9 @@ nav a:hover {
 }
 
 .reviews {
- position: relative;
- margin: 0 auto;
- margin-bottom: 210px;
+  position: relative;
+  margin: 0 auto; /*не дублируем паддинги и марджины*/
+  margin-bottom: 210px;
 }
 
 .reviews:before {
@@ -323,7 +323,7 @@ nav a:hover {
   display: flex;
   font-size: 36px;
   font-family: 'Fira Sans', serif;
-  margin: 0 auto;
+  margin: 0 auto; /*не дублируем паддинги и марджины*/
   justify-content: center;
   line-height: 30px;
   margin-bottom: 80px;
@@ -366,12 +366,12 @@ nav a:hover {
   overflow: hidden;
   border-radius: 9px;
   width: 460px;
-  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5); /*у значения 0 не указываем имя величины*/
   font-size: 0;
-  margin-right: 24px;
+  margin-right: 24px;/*не дублируем паддинги и марджины*/
   margin-bottom: 38px;
 }
- 
+
 .about__image img {
   object-fit: cover;
 }
@@ -388,12 +388,12 @@ nav a:hover {
 }
 
 .blog {
- display: flex;
- flex-direction: row;
- margin: 0 auto;
- background-image: url(../images/backgroun_2.jpg);
- background-repeat: repeat;
- margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;/*не дублируем паддинги и марджины*/
+  background-image: url(../images/backgroun_2.jpg);
+  background-repeat: repeat;
+  margin-bottom: 150px;
 }
 
 .blog__column {
@@ -405,7 +405,7 @@ nav a:hover {
   font-size: 36px;
   font-family: 'Fira Sans',serif;
   line-height: 20px;
-  letter-spacing: 50;
+  letter-spacing: 50; /*нужно указать имя величины*/
   color: #fff;
   padding-left: 45px;
 
@@ -419,14 +419,14 @@ nav a:hover {
 }
 
 .blog__icon {
-  background: url(../css_sprites.png); no-repeat;
+  background: url(../css_sprites.png); no-repeat; /*через запятую передаем мы параметры свойств разных*/
   width: 26px;
   height: 26px;
   display: inline-block;
-  margin-right: 9px; 
+  margin-right: 9px;
 }
 
-.vk { 
+.vk {
   background-position: -102px -102px;
   margin-left: 45px;  }
 .vk:hover { background-position: -148px -102px; }
@@ -459,9 +459,9 @@ nav a:hover {
   overflow-x: hidden;
   border-radius: 10px 10px 10px 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.4); /*нули без имени величины пишем мы*/
   text-decoration: none;
-  
+
 }
 
 .blog__article-image {
@@ -477,7 +477,7 @@ nav a:hover {
 .blog__article-link {
   display: block;
   font-size: 14px;
-  font-family: 'Fira Sans' serif;
+  font-family: 'Fira Sans' serif;/*через запятую передаем мы параметры свойств разных*/
   line-height: 30px;
   padding-left: 11px;
   color: #510fad;
@@ -490,9 +490,9 @@ nav a:hover {
 }
 
 .contact {
- margin: 0 auto;
- padding-left: 45px;
- margin-bottom: 122px;
+  margin: 0 auto; /*не дублируем и не перебиваем марждины и паддинги в одном и том же селекторе*/
+  padding-left: 45px;
+  margin-bottom: 122px;
 }
 
 .contact__title {
@@ -531,11 +531,11 @@ nav a:hover {
   border-top: 2px solid #d5d1ca;
   padding-top: 33px;
   padding-left: 45px;
- 
+
 }
 
 .footer__nav {
- margin-right: auto;
+  margin-right: auto;
 }
 
 .footer__nav-link {
