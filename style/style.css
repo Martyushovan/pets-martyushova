@@ -25,8 +25,6 @@
   font-display: swap;
 }
 
-/*не более одной пустой строки между кодом*/
-
 body {
   background-color: #ede9e0;
   font-size: 16px;
@@ -52,7 +50,6 @@ h1 {
   font-family: 'Fira Sans', sans-serif;
   margin-top: 158px;
 }
-
 
 .nav {
   display: inline-block;
@@ -110,10 +107,8 @@ nav a:hover {
   font-weight: 500;
 }
 
-
 .about {
   position: relative;
-  margin: 0 auto; /*марджины и паддинги не дублируем*/
   background-color: #510fad;
   margin-bottom: 244px;
 }
@@ -124,7 +119,6 @@ nav a:hover {
   display: block;
   margin-top: -84px;
 }
-
 
 .about__row {
   width: 944px;
@@ -139,7 +133,7 @@ nav a:hover {
   flex-direction: column;
   width: 354px;
   margin-left: 365px;
-  font-family: 'Fira Sans'; /*свойство ожидает два параметра, например указание засечек*/
+  font-family: 'Fira Sans', serif;
   color: #ffffff;
   margin-bottom: 86px;
   padding-top: 116px;
@@ -169,7 +163,7 @@ nav a:hover {
   overflow: hidden;
   border-radius: 9px;
   width: 460px;
-  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5); /*значение 0 пишем без указания единиц*/
+  box-shadow: 0 20px 45px 5px rgba(0, 0, 0, 0.5);
   font-size: 0;
   margin-right: 24px;
 }
@@ -182,7 +176,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   align-self: center;
-  padding-top: 0px; /*значение 0 пишем без указания единиц*/
+  padding-top: 0;
 }
 
 .about__features-list {
@@ -196,7 +190,7 @@ nav a:hover {
 }
 
 .about__video-link {
-  font-family: 'Fira Sans' serif; /*тут передаем значения через запятую*/
+  font-family: 'Fira Sans', serif;
   font-size: 16px;
   color: #ffec00;
   text-decoration: none;
@@ -208,7 +202,7 @@ nav a:hover {
 }
 
 .about__icon {
-  background: url(../css_sprites.png); no-repeat; /*тут передаем значения через запятую*/
+  background: url(../css_sprites.png), no-repeat;
   display: inline-block;
   vertical-align: middle;
   width: 20px;
@@ -218,7 +212,6 @@ nav a:hover {
 
 .arrow-y { background-position: -10px -148px;}
 .arrow-y:hover { background-position: -130px -148px; }
-
 
 .breed {
   margin-bottom: 152px;
@@ -230,13 +223,12 @@ nav a:hover {
   line-height: 20px;
   color: #202020;
   text-align: center;
-  letter-spacing: 50; /*необходимо указать имя величины px, em, rem, %  или иную*/
+  letter-spacing: 0.05em;
 }
 
 .breed__row {
   display: flex;
   width: 944px;
-  margin: 0 auto; /*не дублируем паддинги и марджины*/
   margin-bottom: 72px;
 }
 
@@ -244,12 +236,12 @@ nav a:hover {
   font-size: 24px;
   font-family: 'Fira Sans', serif;
   line-height: 20px;
-  letter-spacing: 50; /*необходимо указать имя величины px, em, rem, %  или иную*/
+  letter-spacing: 0.05em;
 }
 
 .breed__row-page {
   display: inline-flex;
-  align-items: top; /*у данного свойства нет такого значения, инфа тут: webref.ru */
+  align-items: flex-start;
 }
 
 .breed__image {
@@ -281,7 +273,6 @@ nav a:hover {
   color: #510fad;
   text-decoration: none;
   line-height: 30px;
-  flex-wrap: 500; /*у данного свойства нет такого значения, инфа тут: webref.ru */
 }
 
 .view:hover {
@@ -308,7 +299,6 @@ nav a:hover {
 
 .reviews {
   position: relative;
-  margin: 0 auto; /*не дублируем паддинги и марджины*/
   margin-bottom: 210px;
 }
 
@@ -323,7 +313,6 @@ nav a:hover {
   display: flex;
   font-size: 36px;
   font-family: 'Fira Sans', serif;
-  margin: 0 auto; /*не дублируем паддинги и марджины*/
   justify-content: center;
   line-height: 30px;
   margin-bottom: 80px;
@@ -366,9 +355,8 @@ nav a:hover {
   overflow: hidden;
   border-radius: 9px;
   width: 460px;
-  box-shadow: 0px 20px 45px 5px rgba(0, 0, 0, 0.5); /*у значения 0 не указываем имя величины*/
+  box-shadow: 0 20px 45px 5px rgba(0, 0, 0, 0.5);
   font-size: 0;
-  margin-right: 24px;/*не дублируем паддинги и марджины*/
   margin-bottom: 38px;
 }
 
@@ -390,7 +378,6 @@ nav a:hover {
 .blog {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;/*не дублируем паддинги и марджины*/
   background-image: url(../images/backgroun_2.jpg);
   background-repeat: repeat;
   margin-bottom: 150px;
@@ -405,10 +392,9 @@ nav a:hover {
   font-size: 36px;
   font-family: 'Fira Sans',serif;
   line-height: 20px;
-  letter-spacing: 50; /*нужно указать имя величины*/
+  letter-spacing: 0.05em;
   color: #fff;
   padding-left: 45px;
-
 }
 
 .blog__title-suptitle {
@@ -419,7 +405,7 @@ nav a:hover {
 }
 
 .blog__icon {
-  background: url(../css_sprites.png); no-repeat; /*через запятую передаем мы параметры свойств разных*/
+  background: url(../css_sprites.png), no-repeat;
   width: 26px;
   height: 26px;
   display: inline-block;
@@ -459,9 +445,8 @@ nav a:hover {
   overflow-x: hidden;
   border-radius: 10px 10px 10px 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.4); /*нули без имени величины пишем мы*/
+  box-shadow: 0 6px 40px 0px rgba(0, 0, 0, 0.4);
   text-decoration: none;
-
 }
 
 .blog__article-image {
@@ -477,7 +462,7 @@ nav a:hover {
 .blog__article-link {
   display: block;
   font-size: 14px;
-  font-family: 'Fira Sans' serif;/*через запятую передаем мы параметры свойств разных*/
+  font-family: 'Fira Sans', serif;
   line-height: 30px;
   padding-left: 11px;
   color: #510fad;
@@ -490,7 +475,6 @@ nav a:hover {
 }
 
 .contact {
-  margin: 0 auto; /*не дублируем и не перебиваем марждины и паддинги в одном и том же селекторе*/
   padding-left: 45px;
   margin-bottom: 122px;
 }
@@ -505,7 +489,6 @@ nav a:hover {
 .contact__row {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
 }
 
 .contact__column {
@@ -520,6 +503,11 @@ nav a:hover {
   margin-bottom: 22px;
 }
 
+.contact__item-email {
+  text-decoration: none;
+  color: #202020;
+}
+
 .contact__item-tel {
   text-decoration: none;
   color: #202020;
@@ -531,7 +519,6 @@ nav a:hover {
   border-top: 2px solid #d5d1ca;
   padding-top: 33px;
   padding-left: 45px;
-
 }
 
 .footer__nav {
@@ -547,10 +534,10 @@ nav a:hover {
 }
 
 .footer__icon {
-  background: url(../css_sprites.png); no-repeat;
+  display: inline-block;
+  background: url(../css_sprites.png), no-repeat;
   width: 26px;
   height: 26px;
-  display: inline-block;
   padding-top: 23px;
 }
 
