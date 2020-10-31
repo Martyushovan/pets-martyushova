@@ -230,6 +230,7 @@ nav a:hover {
   display: flex;
   width: 944px;
   margin-bottom: 72px;
+  padding-left: 40px;
 }
 
 .breed__row-name {
@@ -322,11 +323,13 @@ nav a:hover {
 .reviews__row-content {
   display: inline-flex;
   justify-content: space-around;
+  padding-right: 41px;
 }
 
 .reviews__row-quote {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 .reviews__row-name {
@@ -363,6 +366,7 @@ nav a:hover {
 
 .about__image img {
   object-fit: cover;
+  margin-left: 40px;
 }
 
 .reviews__video {
