@@ -444,10 +444,12 @@ nav a:hover {
   display: block;
   width: 220px;
   overflow-x: hidden;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0 6px 40px 0px rgba(0, 0, 0, 0.4);
-  text-decoration: none;
+}
+
+.blog__article-block:hover {
+  box-shadow: 0px 6px 40px 0px rgba(0, 0, 0, 0.8);
 }
 
 .blog__article-image {
@@ -464,6 +466,7 @@ nav a:hover {
   display: block;
   font-size: 14px;
   font-family: 'Fira Sans', serif;
+  text-decoration: none;
   line-height: 30px;
   padding-left: 11px;
   color: #510fad;
