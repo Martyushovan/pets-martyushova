@@ -117,7 +117,7 @@ nav a:hover {
   position: absolute;
   content: url(../images/about_decoration_top.png);
   display: block;
-  margin-top: -84px;
+  margin-top: -83px;
 }
 
 .about__row {
@@ -190,6 +190,7 @@ nav a:hover {
 }
 
 .about__video-link {
+  position: relative; 
   font-family: 'Fira Sans', serif;
   font-size: 16px;
   color: #ffec00;
@@ -201,17 +202,16 @@ nav a:hover {
   color: #b8adc8;
 }
 
-.about__icon {
-  background: url(../css_sprites.png), no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 14px;
+.about__video-link:after {
+  position: absolute;
+  content: url(../images/arrow_next.png);
   margin-left: 18px;
+  top: 3px;
 }
 
-.arrow-y { background-position: -10px -148px;}
-.arrow-y:hover { background-position: -130px -148px; }
+.about__video-link:hover::after{
+  content:url(../images/arrow_video-lg.png);
+}
 
 .breed {
   margin-bottom: 152px;
@@ -273,19 +273,20 @@ nav a:hover {
   color: #510fad;
   text-decoration: none;
   line-height: 30px;
+
 }
 
 .view:hover {
   color: #868587;
 }
 
-.viev__icon {
+.view__icon {
   background: url(../css_sprites.png); no-repeat;
   display: inline-block;
   vertical-align: middle;
   width: 20px;
   height: 14px;
-  margin-left: 14px;
+  margin-left: 14px;  
 }
 
 .arrow-v {background-position: -50px -148px;}
