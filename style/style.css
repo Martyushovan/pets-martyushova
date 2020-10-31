@@ -268,6 +268,7 @@ nav a:hover {
 }
 
 .view {
+  position: relative;
   font-size: 14px;
   font-family: 'Fira Sans', serif;
   color: #510fad;
@@ -280,17 +281,16 @@ nav a:hover {
   color: #868587;
 }
 
-.view__icon {
-  background: url(../css_sprites.png); no-repeat;
-  display: inline-block;
-  vertical-align: middle;
-  width: 20px;
-  height: 14px;
-  margin-left: 14px;  
+.view:after {
+  position: absolute;
+  content: url(../images/arrow_next_f.png);
+  left: 150px;
+  top: 3px;
 }
 
-.arrow-v {background-position: -50px -148px;}
-.arrow-v:hover {background-position: -90px -148px;}
+.view:hover:after {
+  content: url(../images/arrow_next-g.png);
+}
 
 .decor {
   padding-left: 14px;
