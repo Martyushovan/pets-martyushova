@@ -160,16 +160,14 @@ nav a:hover {
 }
 
 .about__image {
-  overflow: hidden;
+  background-image: url(../images/dog_in_car.jpg);
+  background-repeat: no-repeat;
   border-radius: 9px;
   width: 460px;
+  height: 275px;
   box-shadow: 0 20px 45px 5px rgba(0, 0, 0, 0.5);
   font-size: 0;
   margin-right: 24px;
-}
-
-.about__image img {
-  object-fit: cover;
 }
 
 .about__features {
@@ -362,11 +360,6 @@ nav a:hover {
   box-shadow: 0 20px 45px 5px rgba(0, 0, 0, 0.5);
   font-size: 0;
   margin-bottom: 38px;
-}
-
-.about__image img {
-  object-fit: cover;
-  margin-left: 40px;
 }
 
 .reviews__video {
